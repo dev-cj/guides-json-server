@@ -1,0 +1,122 @@
+{
+    "how-to-stake": {
+        "title": "How to stake - Guide - Help Center - Polka Analytics",
+        "meta": {
+            "name": "description",
+            "content": "Validator key stats"
+        },
+        "logEvent": {
+            "eventType": "Staking guide view"
+        },
+        "heading": "How to stake?",
+        "description": {
+            "text": "A step by step guide on how to stake tokens on the",
+            "link": {
+                "isExternal": true,
+                "href": "https://polkadot.network/",
+                "text": "Polkadot Network"
+            }
+        },
+        "cardsArray": [
+            {
+                "icon": "1",
+                "heading": "Create a stash account",
+                "text": "Stash account holds funds bonded for staking, but delegates some functions to a Controller. To create a stash account, head over to the Accounts section of the Polkadot UI. Click on the “Add account” button. This will open up a form with 5 fields. We’ll ignore the fields under the advanced creation options for the purpose of this tutorial. The first field asks for a “Name”. Enter whatever name you want the account to have. The second field contains an auto-generated “mnemonic seed”. Write this phrase down and keep it safe. Don’t share this with anyone as this will give them access to the funds in your account. Next, you need to choose a strong password. We highly recommend using a password generator to generate a strong password. Needless to say, keep this information safe and secret as well. Now, click on the “Save” button. This will open up a dialog which will ask you to save the backup file for your account in a secure location along with your password as this will allow you to restore your account. Go ahead and click the “Create and backup account” button. This will open a download dialog on your browser. Choose a secure location to store this file and click “Save File”. Your stash account is created and a backup file has been stored your your selected location."
+            },
+            {
+                "icon": "2",
+                "heading": "Create a controller account",
+                "text": "Controller account acts on behalf of the Stash account, signalling decisions about nominating and validating. It sets preferences like payout account and commission. It only needs enough funds to pay transaction fees. The steps to create a controller account are identical to creating a stash account. The only difference is in the usage. For now, just repeat the steps that were used to create the stash account."
+            },
+            {
+                "icon": "3",
+                "heading": "Bond your tokens",
+                "text": "On the Polkadot UI, go to the “Staking” tab. On the top-left of this section you’ll see a tab labelled “Account actions”. Click on this tab. Next, click on the button labelled “New stake” on your screen. This will open up a form with fields for your stash account, controller account, value to be bonded from the stash account and payment destination. In the stash and controller account fields, select your stash and controller accounts respectively. In the “value bonded” field, enter the amount of tokens that you would like to stake in forthcoming rounds. Lastly, for the “payment destination” select whichever payment destination you like. If you’re unsure just click “Stash account (increase amount at stake)”. Click on the “Bond” button. This will open up an authenication form, enter the password of your stash account and click “Sign and Submit” button. Now, you’re bonded and ready to nominate."
+            },
+            {
+                "icon": "4",
+                "heading": "Nominate a validator",
+                "text": "Go to the “Staking Overview” tab. You’ll see the list or current validators on the left side. On the right side, you’ll see a list of validators that have signalled their intention to actively participate in the next era. Pick one (or more) of these validators to nominate and copy their address by clicking on the icon. Return to the “Account Actions” screen and you will see your bonded account. Click the “Nominate” button and fill in the blank field with the address of the validator you have chosen. Sign and submit the transaction, and you are now nominating!"
+            },
+            {
+                "icon": "5",
+                "heading": "Stop nominating",
+                "text": "To stop nominating, click the “Stop nominating” button. If you want to start nominating again, just repeat step 4. <br/> Congratulations! You’re now a nominator on the Polkadot Network."
+            },
+            {
+                "icon": "custom",
+                "customIcon": [
+                    {
+                        "name": "check",
+                        "color": "white"
+                    }
+                ],
+                "heading": "Ready to stake?",
+                "text": false,
+                "link": {
+                    "to": "/dashboard",
+                    "text": "Return to dashboard"
+                }
+            }
+        ]
+    },
+    "guide-generator": {
+        "title": "Generate guide from json",
+        "meta": {
+            "name": "description",
+            "content": "Guide Generator react"
+        },
+        "logEvent": {
+            "eventType": "react guide generate logevent"
+        },
+        "heading": "How does this generator work?",
+        "description": {
+            "text": "A step by step guide on how to automate guide generator",
+            "link": {
+                "isExternal": true,
+                "href": "https://google.com/",
+                "text": "this is an external link"
+            }
+        },
+        "cardsArray": [
+            {
+                "icon": "1",
+                "heading": "Create the guide in json",
+                "text": "Refer to json example in guides and start with adding title, meta, logevent, heading and discription."
+            },
+            {
+                "icon": "2",
+                "heading": "Then create cards array",
+                "text": "Add object in array which contains data of each card like this one, starting with icon, heading and text"
+            },
+            {
+                "icon": "3",
+                "heading": "Customize",
+                "text": "To customize icon, set icon value to custom, and add customIcon object"
+            },
+            {
+                "icon": "4",
+                "heading": "Text with html",
+                "text": "Write just string or add html elements for eg. <br> List <li>one</li><li>two</li><br> "
+            },
+            {
+                "icon": "5",
+                "heading": "For link without text",
+                "text": "Set text to false and add link object eg. look for next card"
+            },
+            {
+                "icon": "custom",
+                "customIcon": {
+                    "name": "check",
+                    "color": "white"
+                },
+                "heading": "Ready to generate guide?",
+                "text": false,
+                "link": {
+                    "to": "/dashboard",
+                    "text": "Return to dashboard"
+                }
+            }
+        ]
+    }
+}
